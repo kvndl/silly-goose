@@ -17,13 +17,13 @@ const Banner = () => {
 
   return (
     <div
-      className={classNames(
-        isHidden ? "hidden" : "",
-        "bg-ui-medium h-10 flex items-center justify-between text-sm font-medium text-blue px-4 sm:px-6 lg:px-8"
-      )}
+      // className={classNames(
+      //   isHidden ? "hidden" : "",
+      //   "bg-ui-medium h-10 flex items-center justify-between text-sm font-medium text-blue px-4 sm:px-6 lg:px-8"
+      // )}
     >
-      <p>Free shipping on all orders over $100</p>
-      <button onClick={() => hideBanner()}>&times;</button>
+      {/* <p>Free shipping on all orders over $100</p>
+      <button onClick={() => hideBanner()}>&times;</button> */}
     </div>
   )
 }
