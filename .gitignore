@@ -1,5 +1,4 @@
 infra/**/.terraform
 infra/.terraform**
 **/node_modules
-**/package-lock.json
 **/**/*.sql
