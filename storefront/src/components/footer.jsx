@@ -4,7 +4,7 @@ import React from "react"
 const Footer = () => {
   const socials = [
     {
-      name: "Instagrams",
+      name: "Instagram",
       url: "https://instagram.com/sillygooseatl",
     },
     {
@@ -51,6 +51,7 @@ const Footer = () => {
                 href={social.url}
                 key={social.name}
                 className="mr-3 last:mr-0 text-ui-dark hover:text-gray-700"
+                target="_blank"
               >
                 {social.name}
               </a>
