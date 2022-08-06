@@ -18,4 +18,4 @@ RUN npm install
 
 COPY . .
 
-ENTRYPOINT ["yarn start"]
+ENTRYPOINT ["npm", "start"]
