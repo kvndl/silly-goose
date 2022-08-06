@@ -17,13 +17,13 @@ const IndexPage = ({ data }) => {
       <SearchEngineOptimization title="Home" />
       <div className="bg-ui-light pb-12 lg:pb-0 w-full px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center max-w-screen-2xl mx-auto">
-          <StaticImage
+          {/* <StaticImage
             src="../images/hero-merch.png"
             alt="A black Medusa hoodie and a white Medusa coffee mug"
             placeholder="tracedSVG"
             className="w-full lg:w-1/2 h-auto"
-          />
-          <div>
+          /> */}
+          {/* <div>
             <h1 className="text-4xl">CLAIM YOUR MERCH</h1>
             <p className="mt-2 text-lg font-normal">
               Contribute to Medusa and receive free merch
@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
             <button className="btn-ui mt-4 min-w-full lg:min-w-0">
               Learn more
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="layout-base my-12 min-h-0">
