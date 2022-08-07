@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { useCart } from "../../hooks/use-cart"
 import ManualPayment from "./manual-payment"
 import StripePayment from "./stripe-payment"
+import PaypalPayment from "./paypal-payment"
 
 const Payment = ({ cartId = null }) => {
   const {
@@ -25,6 +26,8 @@ const Payment = ({ cartId = null }) => {
           switch (ps.provider_id) {
             case "stripe":
               return <StripePayment />
+            case "paypal":
+              return <PaypalPayment />
             case "manual":
               return <ManualPayment key="manual" />
             default:
