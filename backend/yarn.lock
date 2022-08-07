@@ -1340,6 +1340,18 @@
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.4.tgz#b740f68609dfae8aa71c3a6cab15d816407ba493"
   integrity sha512-60CHpq+eqnTxLZQ4PGHYNwUX572hgpMHGPtTWMjdTMsAvlm69lZV/4ly6O3sAYkomo4NggGcomrDpBe34rxUqw==
 
+"@paypal/checkout-server-sdk@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@paypal/checkout-server-sdk/-/checkout-server-sdk-1.0.3.tgz#1de69f5c1af8d74ec0e9e26be9ed225d98a1e453"
+  integrity sha512-UEdq8akEdMz0Vs4qoQFU2gMp8PpyE/HKyMwiZuK4vIWUKl8jfd1fWKjQN5cDFm9NkFUIp5U7h++rdMOVj9WMNA==
+  dependencies:
+    "@paypal/paypalhttp" "^1.0.1"
+
+"@paypal/paypalhttp@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@paypal/paypalhttp/-/paypalhttp-1.0.1.tgz#406e337bf86cec7ea58c42eb167eb9b57ed88110"
+  integrity sha512-DC7AHxTT7drF6dUi3YaFdPVuT15sIkpD5H2eHmdtFgxM4UanS1o1ZDfMhR9mpxd8o+X6pz2r+EZVRRq+n1cssQ==
+
 "@sendgrid/client@^7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.7.0.tgz#f8f67abd604205a0d0b1af091b61517ef465fdbf"
@@ -3732,6 +3744,16 @@ medusa-payment-manual@^1.0.16:
   version "1.0.16"
   resolved "https://registry.yarnpkg.com/medusa-payment-manual/-/medusa-payment-manual-1.0.16.tgz#7cfe724fe465572666e10a5e10657721192da0e7"
   integrity sha512-Oxmz3qCZ9b+tCI7TTC1Z6vOFJU8kiSZylxvoN+j8FuqIdtdZepAwSyxYpUB/IDMEbpRmZlFXp2rY4653qT1Mnw==
+
+medusa-payment-paypal@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/medusa-payment-paypal/-/medusa-payment-paypal-1.2.4.tgz#788906e9b13427c12fb9ba446e58258d2e95f25b"
+  integrity sha512-NvO79+YIrhaE1Bj96BbBZlMN8RKgM/4wiqxFce+svHn1Sld/yI5/eOFGWZyTu6XQuGqUjjn09t6oARRUS23wVw==
+  dependencies:
+    "@paypal/checkout-server-sdk" "^1.0.2"
+    body-parser "^1.19.0"
+    express "^4.17.1"
+    medusa-core-utils "^1.1.31"
 
 medusa-payment-stripe@^1.1.41:
   version "1.1.42"

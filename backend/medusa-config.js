@@ -44,6 +44,12 @@ const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 const STRIPE_API_KEY = process.env.STRIPE_API_KEY || "";
 const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET || "";
 
+// PayPal keys
+const PAYPAL_SANDBOX = process.env.PAYPAL_SANDBOX || "true";
+const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID || "";
+const PAYPAL_CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET || "";
+const PAYPAL_AUTH_WEBHOOK_ID = process.env.PAYPAL_AUTH_WEBHOOK_ID || "";
+
 // Spaces
 const SPACE_URL = process.env.SPACE_URL || "";
 const SPACE_BUCKET = process.env.SPACE_BUCKET || "";
@@ -77,6 +83,15 @@ const plugins = [
         access_key_id: SPACE_ACCESS_KEY_ID,
         secret_access_key: SPACE_SECRET_ACCESS_KEY,
     },
+  },
+  {
+    resolve: `medusa-payment-paypal`,
+    options: {
+      sandbox: PAYPAL_SANDBOX,
+      client_id: PAYPAL_CLIENT_ID,
+      client_secret: PAYPAL_CLIENT_SECRET,
+      auth_webhook_id: PAYPAL_AUTH_WEBHOOK_ID
+    }
   },
 ];
 
