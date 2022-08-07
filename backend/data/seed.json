@@ -1,23 +1,14 @@
 {
   "store": {
-    "currencies": ["eur", "usd"]
+    "currencies": ["usd"]
   },
   "users": [
     {
-      "email": "admin@medusa-test.com",
+      "email": "admin@noahschepers.com",
       "password": "supersecret"
     }
   ],
   "regions": [
-    {
-      "id": "test-region-eu",
-      "name": "EU",
-      "currency_code": "eur",
-      "tax_rate": 0,
-      "payment_providers": ["manual"],
-      "fulfillment_providers": ["manual"],
-      "countries": ["gb", "de", "dk", "se", "fr", "es", "it"]
-    },
     {
       "id": "test-region-na",
       "name": "NA",
@@ -29,48 +20,6 @@
     }
   ],
   "shipping_options": [
-    {
-      "name": "PostFake Standard",
-      "region_id": "test-region-eu",
-      "provider_id": "manual",
-      "data": {
-        "id": "manual-fulfillment"
-      },
-      "price_type": "flat_rate",
-      "amount": 1000
-    },
-    {
-      "name": "PostFake Express",
-      "region_id": "test-region-eu",
-      "provider_id": "manual",
-      "data": {
-        "id": "manual-fulfillment"
-      },
-      "price_type": "flat_rate",
-      "amount": 1500
-    },
-    {
-      "name": "PostFake Return",
-      "region_id": "test-region-eu",
-      "provider_id": "manual",
-      "data": {
-        "id": "manual-fulfillment"
-      },
-      "price_type": "flat_rate",
-      "is_return": true,
-      "amount": 1000
-    },
-    {
-      "name": "I want to return it myself",
-      "region_id": "test-region-eu",
-      "provider_id": "manual",
-      "data": {
-        "id": "manual-fulfillment"
-      },
-      "price_type": "flat_rate",
-      "is_return": true,
-      "amount": 0
-    },
     {
       "name": "FakeEx Standard",
       "region_id": "test-region-na",
